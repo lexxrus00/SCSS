@@ -11,12 +11,12 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
+        <header class="header" id="open">
+            <div class="header__container" id="close">
                 <a href="#" class="header__logo">
                     <img src="img/header/header__logo.svg" alt="">
                 </a>
-                <nav class="header__nav nav">
+                <ul class="header__nav nav" id="menu">
                     <li class="nav__item">
                         <a href="#" class="nav__link">PRODUCT</a>
                     </li>
@@ -29,11 +29,16 @@
                     <li class="nav__item">
                         <a href="#" class="nav__link">COMPANY</a>
                     </li>
-                </nav>
+                </ul>
                 <a class="header__btn">CONTACT US</a>
                 <a href="#" class="header__log">LOG IN</a>
-                <a href="#" class="burger">
+                <!-- <a href="#" class="burger">
                     <img src="img/header/burger.svg" alt="">
+                </a> -->
+
+                <a href="#open" class="burger"><span></span></a>
+                <a href="#close" class="close-burger">
+                    <img src="img/header/close-icon.svg" alt="">
                 </a>
             </div>
         </header>
